@@ -425,7 +425,7 @@ const firebaseConfig = {
             const snap = await db.ref('settings/contactNumber').once('value'); 
             const number = snap.val() || '+880123456789'; 
             const clean = number.replace(/\D/g,''); 
-            document.getElementById('whatsappLinkDynamic').href = `https://wa.me/${clean}?text=I want to buy XP for MH Toolkit`; 
+            document.getElementById('whatsappLinkDynamic').href = `https://wa.me/${clean}?text=I want to buy XP for HU Toolkit`; 
             document.getElementById('contactModal').classList.add('open'); 
         },
         async joinWhatsAppChannel() { 
